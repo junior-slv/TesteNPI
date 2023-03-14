@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Projetos/Forms/estilo.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="content">
+            <h1>Formulário</h1>
+        <form id="form">
+            <div>
+                <input id="nome" type="text" placeholder="Digite seu Nome">  
+
+            </div>    
+            <div>
+                <input type="text" placeholder="Digite sua idade"  >
+                <span class="span-required">Insira sua idade</span>
+            </div>
+            <div>
+                <button id="button" type="submit">Enviar</button>
+                <div class="mensagem">Invalido</div>
+            </div>    
+        </form>    
+    </div>
+
+    
+</body>
+<script>
+    console.log('teste');
+    const inputName = document.getElementById('nome');
+    function validateForm(event){
+        inputName.value = name
+        if(name.lenght < 3){
+            console.log('ERRO')
+        }
+    } 
+    const submitButton = document.getElementById('button');
+    submitButton.addEventListener('click', validateForm);
+
+
+</script>
+</html>
